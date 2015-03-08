@@ -1,0 +1,323 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*start commen*/
+h1,h2,h3{
+    text-align: center;
+}
+.header{
+    background-color: #323A45;
+    width: 100%;
+    height: 98px;
+    border-bottom: 2px solid #00B895;
+}
+.header .wrap{
+    width: 90%;
+    margin: 0px auto;
+}
+.logo{
+    float: left;
+    padding: 25px 0px;
+}
+.logo img{
+    max-width: 100%;
+}
+.wrap{
+    width: 65%;
+    margin: 0px auto;
+}
+.menu{
+    float: right;
+    position: static;
+}
+ul{
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px;
+}
+.menu ul li{
+    float: left;
+    display: inline-block;
+}
+.menu ul li a{
+    color: #D6D6D6;
+    padding: 40px 25px;
+    font-size: 1em;
+    display: block;
+}
+.menu ul li.active{
+    background-color: #00B895;
+}
+.menu ul li a:hover{
+    background-color: #00B895;
+}
+.content{
+    width: 100%;
+    min-height: 450px;
+}
+.welcome{
+    padding: 200px 0px;
+    text-align: center;
+    text-shadow: #323A45 -2px 3px 4px;
+}
+
+.menu-title{
+    width: 100%;
+    height: 30px;
+    margin: 30px auto 0px;
+    font-family: fantasy;
+    text-shadow: #323A45 -2px 3px 4px;
+    font-size: 2em;
+    color: #00B895;
+}
+.hr{
+    color: #00B895;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: transparent;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-color: gray;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td {
+    border-top: 0;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+    border-bottom-width: 1px;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+}
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+th {
+    text-align: left;
+}
+td, th {
+    padding: 0;
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.footer{
+    width: 100%;
+    padding: 20px 0px;
+}
+.footer p{
+    font-size: 14px;
+    font-family: Consolas;
+    text-align: center;
+}
+a:link{
+    text-decoration: none;
+}
+/*end commen*/
+
+/*start index*/
+.content .welcome p{
+    font-family: fantasy;
+    font-size: 4em;
+}
+.content .welcome h3{
+    font-family: fantasy;
+    font-size: 4em;
+    color: #00B895;
+}
+/*end index*/
+
+/*start login*/
+.login{
+    width: 100%;
+}
+.login .content{
+    padding-top: 120px;
+    padding-bottom: -30px;
+    text-align: center;
+}
+.login .content h1{
+    font-family: fantasy;
+    color: #00B895;
+    font-size: 4em;
+    text-shadow: #323A45 -2px 3px 4px;
+    padding-bottom: 70px;
+}
+.form-login{
+    font-family: Consolas;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.input-login{
+    display: block;
+    width: 250px;
+    height: 30px;
+    padding: 4px 0px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn-sub{
+    float: left;
+    width: 250px;
+    height: 40px;
+    font-family: Consolas;
+    font-size: 18px;
+    background-color: #449d44;
+    border-style: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/*end login*/
+
+/*start org/index*/
+.org-add{
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+.add{
+    text-align: right;
+    padding-top: 30px;
+}
+.add span a:link{
+    text-decoration: none;
+    color: #00B895;
+}
+.add span a:visited{
+    text-decoration: none;
+    color: blue;
+}
+.org-wrap{
+    width: 65%;
+    margin: 0px auto;
+}
+.btn-org-update{
+    float: left;
+    width: 40px;
+    height: 20px;
+    font-family: Consolas;
+    font-size: 12px;
+    background-color: #419641;
+    border-style: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-org-delete{
+    float: right;
+    width: 40px;
+    height: 20px;
+    font-family: Consolas;
+    font-size: 12px;
+    background-color: #c12e2a;
+    border-style: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/*end org/index*/
+
+/* start org/add_org */
+.content{
+    width: 100%;
+}
+.content .add-part{
+    padding-top: 120px;
+    padding-bottom: -30px;
+    text-align: center;
+}
+.content .add-part h1{
+    font-family: fantasy;
+    color: #00B895;
+    font-size: 4em;
+    text-shadow: #323A45 -2px 3px 4px;
+    padding-bottom: 70px;
+}
+.add-input{
+    font-family: Consolas;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.input-add-org{
+    display: block;
+    width: 250px;
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn-add-org-right{
+    float: left;
+    width: 125px;
+    height: 40px;
+    font-family: Consolas;
+    font-size: 18px;
+    background-color: #449d44;
+    border-style: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-add-org-waring{
+    float: left;
+    width: 125px;
+    height: 40px;
+    font-family: Consolas;
+    font-size: 18px;
+    background-color: #c12e2a;
+    border-style: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/* end org/add_org*/
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="organization" namespace="/" extends="struts-default">
+		<action name="org_toIndex" class="organizationAction" method="toIndex">
+			<result name="success">/WEB-INF/org/index.jsp</result>
+		</action>
+		
+		<action name="org_toAdd" class="organizationAction" method="toAdd">
+			<result name="success">/WEB-INF/org/add.jsp</result>
+		</action>
+		
+		<action name="org_add" class="organizationAction" method="add">
+			<result name="success">/WEB-INF/org/index.jsp</result>
+		</action>
+		
+		<action name="org_toUpdate" class="organizationAction" method="toUpdate">
+			<result name="success">/WEB-INF/org/update.jsp</result>
+		</action>
+		
+		<action name="org_update" class="organizationAction" method="update">
+			<result name="success">/WEB-INF/org/index.jsp</result>
+			<result name="failed">/WEB-INF/org/update.jsp</result>
+		</action>
+		
+		<action name="org_delete" class="organizationAction" method="delete">
+			<result name="success">/WEB-INF/org/index.jsp</result>
+		</action>
+		
+		
+	</package>
+
+</struts>

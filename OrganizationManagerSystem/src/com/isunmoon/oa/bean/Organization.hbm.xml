@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.isunmoon.oa.bean.Organization" table="t_organization">
+		
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		
+		<property name="name"/>
+		<property name="description"/>
+		
+		<many-to-one name="parent" column="pid"></many-to-one>
+		
+		<set name="children" lazy="extra" inverse="true">
+			<key column="pid"></key>
+			<one-to-many class="com.isunmoon.oa.bean.Organization"/>
+		</set>
+		
+	</class>
+</hibernate-mapping>
