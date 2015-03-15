@@ -8,9 +8,9 @@
 
 
 <!-- start footer -->
-<div class="footer">
+<!-- <div class="footer">
     <p>Copyright &copy; 2014.<a href="http://www.isunmoon.com">ISUNMOON</a> All rights reserved.</p>
-</div>
+</div> -->
 <!-- end footer -->
 
 

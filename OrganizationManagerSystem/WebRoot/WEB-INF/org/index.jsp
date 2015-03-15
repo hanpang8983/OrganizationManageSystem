@@ -62,16 +62,7 @@
                 	</c:forEach>
                 </c:if>
                 
-                <c:if test="${empty orgList }">
                 
-                	<!-- <tr>
-                        <td>无</td><td>更</td><td>多</td><td>信</td>
-                        <td>
-                            息
-                        </td>
-                    </tr> -->
-                
-                </c:if>
                 
                     
                 </tbody>

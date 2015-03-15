@@ -1,7 +1,10 @@
 package com.isunmoon.oa.action;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.struts2.ServletActionContext;
 
 import com.isunmoon.oa.bean.Organization;
 import com.isunmoon.oa.service.OrganizationService;
@@ -25,6 +28,7 @@ public class OrganizationAction extends ActionSupport {
 		
 		List orgList = organizationService.queryOrgsById(orgId);
 		ActionContext.getContext().put("orgList", orgList);
+		
 		
 		return "success";
 	}

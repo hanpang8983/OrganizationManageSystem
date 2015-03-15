@@ -18,7 +18,7 @@
         </div><div class="menu">
             <ul>
                 <li><a href="org_toIndex.action?orgId=${0 }">组织管理</a></li>
-                <li><a href="#">人员管理</a></li>
+                <li><a href="person_toIndex.action">人员管理</a></li>
                 <li><a href="#">用户管理</a></li>
                 <li><a href="#">角色管理</a></li>
                 <li><a href="#">模块管理</a></li>

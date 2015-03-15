@@ -321,3 +321,18 @@ a:link{
 }
 /* end org/add_org*/
 
+/*
+链接
+*/
+a:link{
+	text-decoration: none;
+	color: #008000;
+}
+a:visited{
+	text-decoration: none;
+	color: blue;
+}
+
+body{
+	min-width: 1200px;
+}

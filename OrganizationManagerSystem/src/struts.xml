@@ -9,5 +9,6 @@
 	
 	<include file="struts-org.xml"></include>
 	<include file="struts-user.xml"></include>
+	<include file="struts-person.xml"></include>
 	
 </struts>

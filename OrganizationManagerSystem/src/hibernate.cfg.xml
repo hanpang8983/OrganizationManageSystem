@@ -3,20 +3,30 @@
 	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-	<session-factory name="mytech">
-	  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>	
-	  <property name="hibernate.connection.url">jdbc:mysql:///isunmoon_oa</property>
-	  <property name="hibernate.connection.username">root</property>
-	  <property name="hibernate.connection.password">root</property>
-	  <!-- 配置数据库的方言 -->
-	  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-	  <property name="hibernate.format_sql">false</property>
-	  <property name="hibernate.hbm2ddl.auto">update</property>
-	  <property name="hibernate.show_sql">true</property>
-	  <property name="hibernate.current_session_context_class">thread</property>
-	  
-	  <mapping resource="com/isunmoon/oa/bean/Organization.hbm.xml"/>
-	  
-	  
-	</session-factory>
+<session-factory name="mytech">
+	<property name="hibernate.connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="hibernate.connection.url">
+		jdbc:mysql:///isunmoon_oa
+	</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">root</property>
+	<!-- 配置数据库的方言 -->
+	<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<property name="hibernate.format_sql">false</property>
+	<property name="hibernate.hbm2ddl.auto">update</property>
+	<property name="hibernate.show_sql">true</property>
+	<property name="hibernate.current_session_context_class">
+		thread
+	</property>
+
+	<mapping resource="com/isunmoon/oa/bean/Organization.hbm.xml" />
+	<mapping resource="com/isunmoon/oa/bean/Person.hbm.xml" />
+	<mapping resource="com/isunmoon/oa/bean/User.hbm.xml" />
+
+
+</session-factory>
 </hibernate-configuration>

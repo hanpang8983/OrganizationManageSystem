@@ -332,3 +332,7 @@ a:visited{
 	text-decoration: none;
 	color: blue;
 }
+
+body{
+	min-width: 1200px;
+}

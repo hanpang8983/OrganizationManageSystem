@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="person" namespace="/" extends="struts-default">
+		<action name="person_toIndex" class="personAction" method="toIndex">
+			<result name="success">/WEB-INF/person/index.jsp</result>
+		</action>
+		
+		<action name="person_toAdd" class="personAction" method="toIndex">
+			<result name="success">/WEB-INF/person/add.jsp</result>
+		</action>
+		
+		<action name="person_add" class="personAction" method="add">
+			<result name="success">/WEB-INF/person/index.jsp</result>
+		</action>
+		
+		<action name="person_selectOrg" class="personAction" method="selectOrg">
+			<result name="success">/WEB-INF/person/select_org.jsp</result>
+		</action>
+		
+		<action name="person_toUpdate" class="personAction" method="toUpdate">
+			<result name="success">/WEB-INF/person/update.jsp</result>
+		</action>
+		
+		<action name="person_update" class="personAction" method="update">
+			<result name="success">/WEB-INF/person/index.jsp</result>
+		</action>
+		
+		<action name="person_delete" class="personAction" method="delete">
+			<result name="success">/WEB-INF/person/index.jsp</result>
+		</action>
+	</package>
+
+</struts>
