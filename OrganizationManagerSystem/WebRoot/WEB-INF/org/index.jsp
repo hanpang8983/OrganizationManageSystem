@@ -5,16 +5,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>机构管理</title>
-    <link href="style/css/oa.css" rel="stylesheet" type="text/css">
     <script>
         function updateOrg(id, parentId) {
         	window.location="org_toUpdate.action?orgId="+id+"&&parentId="+parentId;
         }
         function deleteOrg(id, parentId,name) {
-        	
         	if(confirm("确认删除机构: "+name+" ？")) {
         		window.location="org_delete.action?orgId="+id+"&&parentId="+parentId;
-        		
         	}else {
         		return false;
         	}
@@ -54,8 +51,10 @@
                 	<tr>
                         <td>${org.id }</td><td><a href="org_toIndex.action?orgId=${org.id }">${org.name }</a></td><td>${org.description }</td><td>${org.parent.name }</td>
                         <td>
-                            <button class="btn-org-update" onclick="updateOrg(${org.id }, ${orgId })">更新</button>
-                            <button class="btn-org-delete" onclick="deleteOrg(${org.id }, ${orgId } , '${org.name }')">删除</button>
+                        <center>
+                            <button class="label label-success" onclick="updateOrg(${org.id }, ${orgId })">更新</button>
+                            <button class="label label-danger" onclick="deleteOrg(${org.id }, ${orgId } , '${org.name }')">删除</button>
+                        </center>
                         </td>
                     </tr>
                 	

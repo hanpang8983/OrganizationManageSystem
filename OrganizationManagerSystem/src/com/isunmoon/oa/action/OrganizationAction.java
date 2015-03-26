@@ -1,13 +1,10 @@
 package com.isunmoon.oa.action;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-
-import org.apache.struts2.ServletActionContext;
 
 import com.isunmoon.oa.bean.Organization;
 import com.isunmoon.oa.service.OrganizationService;
+import com.isunmoon.oa.web.PageModel;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -28,7 +25,9 @@ public class OrganizationAction extends ActionSupport {
 		
 		List orgList = organizationService.queryOrgsById(orgId);
 		ActionContext.getContext().put("orgList", orgList);
-		
+//		String hql = "select * from Organization where id=?";
+//		PageModel pm = baseService.queryPageModel(hql, new Object[] {orgId});
+//		ActionContext.getContext().put("pm", pm);
 		
 		return "success";
 	}

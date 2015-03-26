@@ -6,8 +6,31 @@
 <struts>
 
 	<package name="user" namespace="/" extends="struts-default">
+		<action name="user_login" class="userAction" method="login">
+			<result name="success">/WEB-INF/user/user.jsp</result>
+		</action>
+	
 		<action name="user_toIndex" class="userAction" method="toIndex">
 			<result name="success">/WEB-INF/user/index.jsp</result>
+		</action>
+		
+		<action name="user_toDistributeAccount" class="userAction" method="toDistributeAccount">
+			<result name="success">/WEB-INF/user/distributeAccount.jsp</result>
+		</action>
+		
+		<action name="user_distributeAccount" class="userAction" method="distributeAccount">
+			<result name="success" type="redirectAction">user_toIndex</result>
+		</action>
+		
+		<action name="user_deleteAccount" class="userAction" method="deleteAccount">
+			<result name="success" type="redirectAction">user_toIndex</result>
+		</action>
+		
+		<action name="user_toUpdateAccount" class="userAction" method="toUpdateAccount">
+			<result name="success">/WEB-INF/user/updateAccount.jsp</result>
+		</action>
+		<action name="user_updateAccount" class="userAction" method="updateAccount">
+			<result name="success" type="redirectAction">user_toIndex</result>
 		</action>
 	</package>
 

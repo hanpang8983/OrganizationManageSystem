@@ -10,5 +10,7 @@
 	<include file="struts-org.xml"></include>
 	<include file="struts-user.xml"></include>
 	<include file="struts-person.xml"></include>
+	<include file="struts-role.xml"></include>
+	<include file="struts-module.xml"></include>
 	
 </struts>

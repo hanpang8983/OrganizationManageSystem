@@ -2,12 +2,11 @@ package com.isunmoon.oa.service.impl;
 
 import java.util.List;
 
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
-
 import com.isunmoon.oa.bean.Person;
 import com.isunmoon.oa.service.PersonService;
+import com.isunmoon.oa.web.PageModel;
 
-public class PersonServiceImpl extends HibernateDaoSupport implements PersonService {
+public class PersonServiceImpl extends BaseHibernateDao implements PersonService {
 
 	@Override
 	public void add(Person person) {
@@ -34,6 +33,12 @@ public class PersonServiceImpl extends HibernateDaoSupport implements PersonServ
 	@Override
 	public void updatePerson(Person person) {
 		this.getHibernateTemplate().update(person);
+	}
+
+	@Override
+	public PageModel serchPerson() {
+		String hql = "from Person";
+		return super.serchPageModel(hql);
 	}
 	
 	

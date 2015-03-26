@@ -5,7 +5,6 @@
 <head lang="en">
 <meta charset="UTF-8">
 <title>更新机构</title>
-<link href="style/css/oa.css" rel="stylesheet" type="text/css">
 <script>
     	function cancelUpdate(parentId) {
     		window.location="org_toIndex.action?orgId="+parentId;

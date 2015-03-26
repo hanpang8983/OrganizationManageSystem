@@ -12,7 +12,7 @@
 <div class="login">
     <div class="content">
         <h1>Organization Manager</h1>
-        <form action="user_toIndex.action" method="post" class="form-login">
+        <form action="user_login.action" method="post" class="form-login">
             <input type="text" name="user.username" id="username" placeholder="账 号" class="input-login"/><br/>
             <input type="password" name="user.userpass" id="userpass" placeholder="密 码" class="input-login" /><br/>
             <input type="submit" value="登 陆" class="btn-sub" />

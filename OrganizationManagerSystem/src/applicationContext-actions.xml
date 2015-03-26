@@ -14,11 +14,20 @@
 	</bean>
 	<bean id="userAction" class="com.isunmoon.oa.action.UserAction"
 		scope="prototype">
+		<property name="personService" ref="personService"></property>
+		<property name="userService" ref="userService"></property>
 	</bean>
 	<bean id="personAction" class="com.isunmoon.oa.action.PersonAction"
 		scope="prototype">
 		<property name="organizationService" ref="organizationService"></property>
 		<property name="personService" ref="personService"></property>
+	</bean>
+	<bean id="roleAction" class="com.isunmoon.oa.action.RoleAction"
+		scope="prototype">
+		<property name="roleService" ref="roleService"></property>
+	</bean>
+	<bean id="moduleAction" class="com.isunmoon.oa.action.ModuleAction"
+		scope="prototype">
 	</bean>
 
 
@@ -28,5 +37,12 @@
 	<bean id="personService" class="com.isunmoon.oa.service.impl.PersonServiceImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
+	<bean id="userService" class="com.isunmoon.oa.service.impl.UserServiceImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="roleService" class="com.isunmoon.oa.service.impl.RoleServiceImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
 
 </beans>

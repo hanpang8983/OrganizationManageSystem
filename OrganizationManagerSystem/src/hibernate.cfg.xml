@@ -18,7 +18,7 @@
 	</property>
 	<property name="hibernate.format_sql">false</property>
 	<property name="hibernate.hbm2ddl.auto">update</property>
-	<property name="hibernate.show_sql">true</property>
+	<property name="hibernate.show_sql">false</property>
 	<property name="hibernate.current_session_context_class">
 		thread
 	</property>
@@ -26,6 +26,7 @@
 	<mapping resource="com/isunmoon/oa/bean/Organization.hbm.xml" />
 	<mapping resource="com/isunmoon/oa/bean/Person.hbm.xml" />
 	<mapping resource="com/isunmoon/oa/bean/User.hbm.xml" />
+	<mapping resource="com/isunmoon/oa/bean/Role.hbm.xml" />
 
 
 </session-factory>

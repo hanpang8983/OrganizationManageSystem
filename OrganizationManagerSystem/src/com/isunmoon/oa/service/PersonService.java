@@ -3,6 +3,7 @@ package com.isunmoon.oa.service;
 import java.util.List;
 
 import com.isunmoon.oa.bean.Person;
+import com.isunmoon.oa.web.PageModel;
 
 public interface PersonService {
 	// 添加人员信息
@@ -13,6 +14,11 @@ public interface PersonService {
 	public Person queryPersonById(int id);
 	// 根据人员id删除人员
 	public void deletePersonById(int id);
-	// 更细心呢人员信息
+	// 更新人员信息
 	public void updatePerson(Person person);
+	
+	// 通过PageModel获取分页数据
+	public PageModel serchPerson();
+	
+	
 }

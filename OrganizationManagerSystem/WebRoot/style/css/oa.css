@@ -54,7 +54,7 @@ ul{
 }
 .content{
     width: 100%;
-    min-height: 450px;
+    min-height: 500px;
 }
 .welcome{
     padding: 200px 0px;
@@ -140,8 +140,10 @@ td, th {
 }
 
 .footer{
+	
     width: 100%;
-    padding: 20px 0px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 .footer p{
     font-size: 14px;
@@ -331,6 +333,14 @@ a:link{
 a:visited{
 	text-decoration: none;
 	color: blue;
+}
+
+/*
+分页标签
+*/
+.pager{
+	float: right;
+	padding-bottom: 20px;
 }
 
 body{

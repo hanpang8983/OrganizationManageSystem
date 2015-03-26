@@ -5,7 +5,6 @@
 <head lang="en">
 <meta charset="UTF-8">
 <title>更新人员信息</title>
-<link href="style/css/oa.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	var gMonths=new Array("一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"); 
 	var WeekDay=new Array("日","一","二","三","四","五","六"); 

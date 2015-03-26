@@ -37,7 +37,4 @@
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="abc" />
 	</aop:config>
 
-
-
-
 </beans>

@@ -4,7 +4,6 @@
 <head lang="en">
 <meta charset="UTF-8">
 <title>添加机构</title>
-<link href="style/css/oa.css" rel="stylesheet" type="text/css">
 <script>
 	    function toIndex() {
 			window.location="org_toIndex.action?orgId="+0;

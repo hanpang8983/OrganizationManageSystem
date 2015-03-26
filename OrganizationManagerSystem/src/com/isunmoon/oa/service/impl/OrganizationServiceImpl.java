@@ -6,6 +6,7 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.isunmoon.oa.bean.Organization;
 import com.isunmoon.oa.service.OrganizationService;
+import com.isunmoon.oa.web.PageModel;
 
 public class OrganizationServiceImpl extends HibernateDaoSupport implements OrganizationService {
 
@@ -41,5 +42,4 @@ public class OrganizationServiceImpl extends HibernateDaoSupport implements Orga
 		Organization org = (Organization) this.getHibernateTemplate().load(Organization.class, id);
 		this.getHibernateTemplate().delete(org);
 	}
-	
 }

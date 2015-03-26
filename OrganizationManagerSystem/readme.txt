@@ -1,6 +1,1 @@
-struts2+hibernate3+spring3 demo
-    
-    1.组织管理
-    	
-    2.人员管理
-    	
+﻿

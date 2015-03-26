@@ -11,6 +11,7 @@ import com.isunmoon.oa.bean.Organization;
 import com.isunmoon.oa.bean.Person;
 import com.isunmoon.oa.service.OrganizationService;
 import com.isunmoon.oa.service.PersonService;
+import com.isunmoon.oa.web.PageModel;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -24,20 +25,20 @@ public class PersonAction extends ActionSupport {
 	
 	private int orgId;
 	
+	private int offset;
+	
 	/*
 	 * 跳转到人员管理首页
 	 */
 	public String toIndex() {
-		List personList = personService.queryPersons();
-		ActionContext.getContext().put("personList", personList);
-		
+		PageModel pm = personService.serchPerson();
+		ActionContext.getContext().put("pm", pm);
 		return "success";
 	}
 	/*
 	 * 选择机构页面
 	 */
 	public String selectOrg() {
-		
 		List orgList = organizationService.queryOrgsById(orgId);
 		ActionContext.getContext().put("orgList", orgList);
 		return "success";
@@ -68,7 +69,6 @@ public class PersonAction extends ActionSupport {
 		
 		List personList = personService.queryPersons();
 		ActionContext.getContext().put("personList", personList);
-
 		return "success";
 	}
 	/*
@@ -122,8 +122,8 @@ public class PersonAction extends ActionSupport {
 	public String delete() {
 		personService.deletePersonById(person.getId());
 		
-		List personList = personService.queryPersons();
-		ActionContext.getContext().put("personList", personList);
+		PageModel pm = personService.serchPerson();
+		ActionContext.getContext().put("pm", pm);
 		return "success";
 	}
 	
@@ -153,4 +153,12 @@ public class PersonAction extends ActionSupport {
 	public void setPersonService(PersonService personService) {
 		this.personService = personService;
 	}
+	public int getOffset() {
+		return offset;
+	}
+	public void setOffset(int offset) {
+		this.offset = offset;
+	}
+
+
 }
